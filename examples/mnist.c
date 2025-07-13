@@ -192,7 +192,7 @@ int main(void) {
   srand(time(NULL));
   const int batch_size = envvar("BS", 1);
   const float learning_rate = 1e-4f;
-  const int steps = 100;
+  const int steps = 1000;
 
 
   intarray *input_batch_shape = intarray_build(4, batch_size, 1, 28, 28);

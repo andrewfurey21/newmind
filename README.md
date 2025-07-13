@@ -52,6 +52,7 @@ int main(void) {
 ## future ideas
 
 - broadcasting, in place ops, reduce mallocs by reusing allocs. vectorize/gpu. minimize/optimize cache usage. allocate the graph once, do stuff lazy. have forward function in the tensor or something similar to backward pass. custom allocator for this. that and kernels will be part of backend maybe. read about tcmalloc/jemalloc/malloc/pytorch cuda alloc, maybe a more generic version of this?
+- views, reshapes like pytorch. strides etc.
 - ggml kind of context? lazy setup tensors. no mallocs during inference/training
 - groups, stride, dilation, padding to maxpool + conv. Figure out how im2col works, and how tinygrad does it's convolutions
 - more functions: permute, pad, batchnorm, attention, etc.
@@ -66,4 +67,5 @@ int main(void) {
 - onnx support
 - homomorphic encryption
 - quantization
+- wandb
 - threefry

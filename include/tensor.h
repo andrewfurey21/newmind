@@ -85,7 +85,8 @@ float storage_getindex(storage *data, view *vw, intarray *index);
 void storage_setindex(storage *data, view *vw, intarray *index, float num);
 
 // tensor
-
+// training -> for learnable weights
+// requires grad -> for backpropagating gradients
 typedef struct tensor tensor;
 struct tensor {
   storage *data;

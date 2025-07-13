@@ -68,6 +68,7 @@ tensor *cross_entropy(tensor *log_probs, tensor *Y) {
   return tensor_neg(reduction, log_probs->requires_grad);
 }
 
+// TODO: might need proper max function with backward
 tensor *_max(tensor *input) {
   float max_value = -INFINITY;
   for (int i = 0; i < input->data->size; i++) {
