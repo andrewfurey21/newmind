@@ -69,3 +69,5 @@ int main(void) {
 - quantization
 - wandb
 - threefry
+- use cupti for profiling/tracing
+- examples: mnist cnn, tinydiffusion, gpt2

@@ -941,7 +941,7 @@ tensor *tensor_matmul(tensor *a, tensor *b, bool track_grads) {
         oi->items[2] = j;
         bi->items[2] = j;
         float sum = 0;
-        for (int i = 0; i < aw; i++) {
+        for (int i = 0; i < aw; i++) { // aw == bh
           bi->items[1] = i;
           ai->items[2] = i;
           float av = tensor_getindex(a, ai);

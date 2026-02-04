@@ -100,8 +100,6 @@ struct tensor {
   tensor *grads;
 };
 
-// TODO: tostring
-// (cache in repr, use inside print), view/reshape
 tensor *tensor_zeros(intarray *shape, bool requires_grad);
 tensor *tensor_ones(intarray *shape, bool requires_grad);
 tensor *tensor_from_buffer(intarray *shape, float *buffer, bool requires_grads);

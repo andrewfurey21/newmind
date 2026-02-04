@@ -13,10 +13,10 @@ int main(void) {
   tensor* loss = cross_entropy(t, y);
   tensor_print(loss, true, false);
 
-  // graph* network = graph_build(loss);
-  // graph_zeroed(network);
-  // graph_backprop(network);
-  //
-  // tensor_print(loss, true, false);
-  // tensor_print(log_probs, false, true);
+  graph* network = graph_build(loss);
+  graph_zeroed(network);
+  graph_backprop(network);
+
+  tensor_print(loss, true, false);
+  tensor_print(t, false, true);
 }
