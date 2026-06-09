@@ -3,4 +3,6 @@ obj/*
 build/*
 test.py
 data/*
+.zig-cache/*
+zig-out/*
 
